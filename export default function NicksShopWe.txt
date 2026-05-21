@@ -1,0 +1,171 @@
+export default function NicksShopWebsite() {
+  return (
+    <div className="bg-black text-white min-h-screen font-sans">
+      {/* Hero Section */}
+      <section
+        className="relative h-screen flex items-center justify-center text-center px-6"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?q=80&w=2070&auto=format&fit=crop')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/70" />
+
+        <div className="relative z-10 max-w-3xl">
+          <div className="flex justify-center mb-6">\n            <img\n              src="https://i.imgur.com/7lYQYkH.png"\n              alt="Nick's Barber Shop Logo"\n              className="w-40 md:w-52 bg-white rounded-3xl p-4 shadow-2xl"\n            />\n          </div>\n\n          <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight uppercase">\n            Nick's Shop\n          </h1>
+
+          <p className="mt-6 text-lg md:text-2xl text-gray-300 leading-relaxed">
+            Classic cuts. Clean fades. No nonsense.
+          </p>
+
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:17176254012"
+              className="bg-white text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition"
+            >
+              Call Now
+            </a>
+
+            <a
+              href="https://maps.google.com/?q=701+S+Broad+St+Lititz+PA+17543"
+              target="_blank"
+              className="border border-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-black transition"
+            >
+              Get Directions
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-24 px-6 bg-zinc-950">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+          <img
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1974&auto=format&fit=crop"
+            alt="Barber"
+            className="rounded-3xl shadow-2xl h-[500px] w-full object-cover"
+          />
+
+          <div>
+            <h2 className="text-5xl font-bold mb-6">Lititz's Local Barber Shop</h2>
+
+            <p className="text-gray-400 text-lg leading-relaxed mb-6">
+              Nick's Shop has built a reputation for clean cuts, fair prices,
+              and consistent service. Whether you're stopping in for a quick
+              trim or a fresh fade, you'll leave looking sharp.
+            </p>
+
+            <p className="text-gray-400 text-lg leading-relaxed">
+              Friendly atmosphere. Great service. No unnecessary frills — just
+              quality barbering done right.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}\n      <section className="py-24 px-6 bg-black">\n        <div className="max-w-7xl mx-auto">\n          <div className="text-center mb-16">\n            <h2 className="text-5xl font-bold">Inside The Shop</h2>\n            <p className="text-gray-400 mt-4 text-lg">\n              A clean, welcoming barbershop with quality cuts and a relaxed atmosphere.\n            </p>\n          </div>\n\n          <div className="grid md:grid-cols-3 gap-6">\n            {[\n              'https://images.unsplash.com/photo-1517832606299-7ae9b720a186?q=80&w=1974&auto=format&fit=crop',\n              'https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1974&auto=format&fit=crop',\n              'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1974&auto=format&fit=crop',\n              'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1974&auto=format&fit=crop',\n              'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1974&auto=format&fit=crop',\n              'https://images.unsplash.com/photo-1512690459411-b0aecffe5d3c?q=80&w=1974&auto=format&fit=crop',\n            ].map((img, index) => (\n              <div\n                key={index}\n                className="overflow-hidden rounded-3xl border border-zinc-800 hover:scale-[1.02] t
+      <section className="py-24 px-6 bg-black">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold">Services</h2>
+            <p className="text-gray-400 mt-4 text-lg">
+              Professional cuts and grooming services.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: 'Haircuts',
+                desc: 'Classic cuts, fades, trims, and modern styles.',
+              },
+              {
+                title: 'Beard Trims',
+                desc: 'Clean shaping and detailed beard grooming.',
+              },
+              {
+                title: 'Kids Cuts',
+                desc: 'Friendly environment and sharp cuts for all ages.',
+              },
+            ].map((service, index) => (
+              <div
+                key={index}
+                className="bg-zinc-900 p-8 rounded-3xl border border-zinc-800 hover:border-white transition"
+              >
+                <h3 className="text-3xl font-bold mb-4">{service.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{service.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews */}
+      <section className="py-24 px-6 bg-zinc-950">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold">What Clients Say</h2>
+            <p className="text-gray-400 mt-4 text-lg">
+              Rated 4.8 stars from 150+ reviews.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              'Great price, great cut. Well worth the wait.',
+              'Awesome service and great prices!',
+              'Good haircuts. Takes credit cards.',
+            ].map((review, index) => (
+              <div
+                key={index}
+                className="bg-black border border-zinc-800 rounded-3xl p-8"
+              >
+                <div className="text-2xl mb-4">★★★★★</div>
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  “{review}”
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="py-24 px-6 bg-black">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-5xl font-bold mb-8">Visit Nick's Shop</h2>
+
+          <div className="space-y-4 text-gray-300 text-xl">
+            <p>701 S Broad St, Lititz, PA 17543</p>
+            <p>(717) 625-4012</p>
+            <p>Open Thursday at 10:00 AM</p>
+          </div>
+
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="tel:17176254012"
+              className="bg-white text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition"
+            >
+              Call Shop
+            </a>
+
+            <a
+              href="https://maps.google.com/?q=701+S+Broad+St+Lititz+PA+17543"
+              target="_blank"
+              className="border border-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-black transition"
+            >
+              Open Maps
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-zinc-800 py-8 text-center text-gray-500 bg-black">
+        <p>© 2026 Nick's Shop • Lititz, Pennsylvania</p>
+      </footer>
+    </div>
+  )
+}
